@@ -109,6 +109,43 @@ h5 {
   height: 50px;
 }
 
+
+.info-about .text-m {
+  max-width: 800px;
+}
+
+.item-card {
+  background-color: transparent;
+  border: 1px solid var(--color-var-light);
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+}
+
+.item-card {
+  max-width: 309px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.item-title {
+  margin: 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--color-var-light);
+}
+
+.card-team-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row .item-card:last-child {
+  margin-right: 0;
+}
+
 /* MARGIN */
 
 /***************************
@@ -832,29 +869,4 @@ h5 {
 
 .mr-200 {
   margin-right: 200px !important;
-}
-
-
-.info-about .text-m {
-  max-width: 800px;
-}
-
-.item-card {
-  background-color: transparent;
-  border: 1px solid var(--color-var-light);
-  padding-top: 20px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 70px;
-}
-
-.item-card {
-  max-width: 309px;
-  margin-right: 20px; /* Отступ справа между карточками */
-  margin-bottom: 20px; /* Отступ снизу между карточками */
-}
-
-/* Убираем правый отступ у последней карточки */
-.row .item-card:last-child {
-  margin-right: 0;
 }
