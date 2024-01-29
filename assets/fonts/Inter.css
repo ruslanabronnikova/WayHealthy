@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Inter';
-  src: url('./Inter/Inter-Regular.eot');
-  src: local('Inter Regular'), local('Inter-Regular'),
+  src: local('inter'), local('Inter-Regular'),
       url('./Inter/Inter-Regular.eot') format('embedded-opentype'),
       url('./Inter/Inter-Regular.woff2') format('woff2'),
       url('./Inter/Inter-Regular.woff') format('woff'),
@@ -12,8 +11,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('./Inter/Inter-Medium.eot');
-  src: local('Inter Medium'), local('Inter-Medium'),
+  src: local('inter'), local('Inter-Medium'),
       url('./Inter/Inter-Medium.eot') format('embedded-opentype'),
       url('./Inter/Inter-Medium.woff2') format('woff2'),
       url('./Inter/Inter-Medium.woff') format('woff'),
@@ -24,8 +22,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('./Inter/Inter-Medium.eot');
-  src: local('Inter Medium'), local('Inter-Medium'),
+  src: local('inter'), local('Inter-Medium'),
       url('./Inter/Inter-Medium.eot') format('embedded-opentype'),
       url('./Inter/Inter-Medium.woff2') format('woff2'),
       url('./Inter/Inter-Medium.woff') format('woff'),
@@ -36,8 +33,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('./Inter/Inter-Bold.eot');
-  src: local('Inter Bold'), local('Inter-Bold'),
+  src: local('inter'), local('Inter-Bold'),
       url('./Inter/Inter-Bold.eot') format('embedded-opentype'),
       url('./Inter/Inter-Bold.woff2') format('woff2'),
       url('./Inter/Inter-Bold.woff') format('woff'),
