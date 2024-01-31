@@ -11,13 +11,72 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg container">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./assets/img/icon/logo.svg" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+        aria-controls="staticBackdrop" aria-label="Переключатель навигации">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Наши направления</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Магазин</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Наши специалисты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Статьи и видео
+            </a>
+          </li>
+        </ul>
+        <button class="button-out">Войти/Зарегистрироваться</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+    aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+      <a class="navbar-brand" href="#"><img src="./assets/img/icon/logo.svg" /></a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Наши направления</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Магазин</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Наши специалисты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Статьи и видео
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <section class="main container mt-5">
-    <div class="row">
-      <div class="col-md-6">
+    <div class="row gy-4">
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
         <h1 class="mb-5"><span class="span">Путь</span> осознанного здоровья</h1>
         <img src="./assets/img/main-page/left-img-main-block.png" class="w-100 img-border" />
       </div>
-      <div class="col-md-6">
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
         <img src="./assets/img/main-page/right-img-main-block.png" class="w-100 img-border" />
         <p class="text-m mt-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -53,45 +112,53 @@
 
   <section class="container mt-5">
     <h2 class="title-color mb-4">Наши направления</h2>
-    <div class="row mt-3">
-      <div class="col-lg-3 col-md-6 item-card">
-        <img class="w-100" src="./assets/img/main-page/directions-factory-img.png" />
-        <h5 class="mt-3">Разработка и производство</h5>
-        <p class="text-s mt-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+    <div class="row gy-5">
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-12">
+        <div class="item-card">
+          <img class="w-100" src="./assets/img/main-page/directions-factory-img.png" />
+          <h5 class="mt-3">Разработка и производство</h5>
+          <p class="text-s mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
       </div>
-      <div class="col-lg-3 col-md-6 item-card">
-        <h5>Диагностические комплексы</h5>
-        <p class="text-s mt-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <img class="w-100 mt-40" src="./assets/img/main-page/directions-diagnostic-img.png" />
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-12">
+        <div class="item-card">
+          <h5>Диагностические комплексы</h5>
+          <p class="text-s mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <img class="w-100 mt-40" src="./assets/img/main-page/directions-diagnostic-img.png" />
+        </div>
       </div>
-      <div class="col-lg-3 col-md-6 item-card">
-        <img class="w-100" src="./assets/img/main-page/directions-open-room-img.png" />
-        <h5 class="mt-3">Открытие оздоровительных кабинетов</h5>
-        <p class="text-s mt-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-12">
+        <div class="item-card">
+          <img class="w-100" src="./assets/img/main-page/directions-open-room-img.png" />
+          <h5 class="mt-3">Открытие оздоровительных кабинетов</h5>
+          <p class="text-s mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
       </div>
-      <div class="col-lg-3 col-md-6 item-card">
-        <h5>Программа Стройность</h5>
-        <p class="text-s mt-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <img class="w-100 mt-3" src="./assets/img/main-page/directions-program-img.png" />
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-12">
+        <div class="item-card">
+          <h5>Программа Стройность</h5>
+          <p class="text-s mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <img class="w-100 mt-3" src="./assets/img/main-page/directions-program-img.png" />
+        </div>
       </div>
     </div>
   </section>
 
   <section class="container mt-5">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-6 mb-4">
         <img class="w-100 img-border" src="./assets/img/main-page/advantages-img.png" />
       </div>
       <div class="col-lg-6">
@@ -156,7 +223,7 @@
   <section class="container mt-5">
     <h2 class="title-color mb-4">Наша Команда</h2>
 
-    <div class="row mt-3">
+    <div class="row gy-4">
       <div class="col-lg-3 col-md-6 card-team">
         <img class="w-100 img-border" src="./assets/img/main-page/team-01-img.png" />
         <div class="card-team-info mt-2">
@@ -273,7 +340,7 @@
   <section class="container mt-5">
     <h2 class="title-color mb-4">ОТЗЫВЫ</h2>
 
-    <div class="row">
+    <div class="row gy-4">
       <div class="col-lg-6">
         <div class="rewiew-card">
           <div class="reweiw-top d-flex justify-content-between">

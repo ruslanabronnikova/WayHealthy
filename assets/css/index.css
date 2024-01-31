@@ -114,8 +114,103 @@ h5 {
   color: white;
   line-height: 1;
   height: 50px;
+  transition: all .2s;
 }
 
+.button:hover {
+  background-color: transparent;
+  border: 1px solid var(--color-var-btn-primary);
+  color: var(--color-var-btn-primary);
+}
+
+.button-out {
+  background-color: transparent;
+  color: var(--color-var-btn-primary);
+  border: 1px solid var(--color-var-btn-primary);
+  padding: 10px 20px;
+  height: 45px;
+  font-size: 14px;
+  transition: all .2s;
+}
+
+.button-out:hover {
+  background-color: var(--color-var-btn-primary);
+  color: white;
+}
+
+.counterButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--color-var-btn-primary);
+  color: var(--color-var-btn-primary);
+  padding: 15px 35px;
+  font-size: 16px;
+  height: 50px;
+  gap: 10px;
+  display: none;
+}
+
+.decreaseButton {
+  color: var(--color-var-btn-primary);
+}
+
+.increaseButton {
+  color: var(--color-var-btn-primary);
+}
+
+.button-dropdown {
+  padding: 15px 25px;
+  background-color: transparent;
+  border: 1px solid var(--color-var-light);
+  border-radius: 0;
+  color: var(--color-var-btn-primary);
+}
+
+.button-dropdown:hover {
+  border: 1px solid var(--color-var-btn-primary);
+}
+
+.dropdown-menu {
+  border-radius: 0;
+}
+
+.paginations {
+  display: flex;
+  gap: 14px;
+  padding: 10px 15px;
+}
+
+.page-item {
+  background-color: transparent;
+  border: 1px solid #BEBEBE;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.page-item:hover {
+  background-color: #F4AB55;
+  border: 0;
+  color: white;
+}
+
+.page-item.active {
+  background-color: #F4AB55;
+  border: 0;
+  color: white;
+}
+
+.page-link {
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+  color: var(--color-var-text);
+}
+
+.page-link:hover {
+  color: white;
+}
 
 .info-about .text-m {
   max-width: 800px;
@@ -132,8 +227,7 @@ h5 {
 
 .item-card {
   max-width: 309px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  height: 300px;
 }
 
 .item-title {
@@ -298,6 +392,22 @@ h5 {
   font-size: 20px;
 }
 
+.pannel-category {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.nav-link {
+  font-size: 14px;
+  color: var(--color-var-text);
+}
+
+
+.navbar-toggler {
+  border: none;
+}
+
 .footer-container {
   padding-top: 25px;
   padding-bottom: 15px;
@@ -320,4 +430,71 @@ h5 {
 
 .footer-title-list {
   text-transform: uppercase;
+}
+
+
+@media (max-width: 1199px) {
+
+  h1 {
+    font-size: 30px;
+  }
+  
+  h2 {
+    font-size: 25px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  h4 {
+    font-size: 18px;
+  }
+  
+  h5 {
+    font-size: 12px;
+  }
+  
+
+  .navbar-expand-lg .navbar-collapse {
+    display: none !important;
+  }
+
+  .navbar-toggler {
+    display: block !important;
+  }
+
+  .offcanvas {
+    display: block !important;
+  }
+
+  .info-about .text-m {
+    max-width: 600px;
+  }
+
+  .shop-card-price {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+  .info-about {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .footer-doc {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 5px;
+  }
+
+  .reweiw-top {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .reweiw-stars {
+    max-width: 100px;
+  }
 }
