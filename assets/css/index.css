@@ -432,6 +432,37 @@ h5 {
   text-transform: uppercase;
 }
 
+.form-control {
+  background-color: transparent;
+  border: 1px solid var(--color-var-light);
+  border-radius: 0;
+}
+
+.product-lists {
+  border: 0;
+}
+
+.product-list {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Прозрачный черный фон */
+  z-index: 2;
+}
+
+.modal-dialog-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-signin {
+  width: 80%; /* Ширина модального окна */
+}
+
+
 
 @media (max-width: 1199px) {
 
