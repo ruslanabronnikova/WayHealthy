@@ -1,5 +1,6 @@
 /*import vendors*/
-@import url(vendors/normalize.css);
+@import url(../../vendor/fonts/inter.css);
+@import url(../../vendor/fonts/micra.css);
 
 :root {
   --color-var-back-page: #F7F3E3;
