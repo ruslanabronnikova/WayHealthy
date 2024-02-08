@@ -1,8 +1,5 @@
 /*import vendors*/
 @import url(vendors/normalize.css);
-@import url(vendors/bootstrap.min.css);
-@import url(vendors/bootstrap.min.css.map);
-
 
 :root {
   --color-var-back-page: #F7F3E3;
@@ -48,7 +45,7 @@ ul {
 h1 {
   font-size: 37px;
   line-height: 1.1;
-  font-family: 'Micra';
+  font-family: 'Micra','Arial', 'sans-serif';
   font-weight: bold;
   font-style: normal;
   color: var(--color-var-text);
@@ -57,7 +54,7 @@ h1 {
 h2 {
   font-size: 35px;
   line-height: 1.2;
-  font-family: 'Micra';
+  font-family: 'Micra','Arial', 'sans-serif';
   font-weight: bold;
   font-style: normal;
 }
@@ -65,7 +62,7 @@ h2 {
 h3 {
   font-size: 30px;
   line-height: 1.2;
-  font-family: 'Micra';
+  font-family: 'Micra','Arial', 'sans-serif';
   font-weight: normal;
   font-style: normal;
 }
@@ -73,7 +70,7 @@ h3 {
 h4 {
   font-size: 25px;
   line-height: 1.2;
-  font-family: 'Micra';
+  font-family: 'Micra','Arial', 'sans-serif';
   font-weight: normal;
   font-style: normal;
 }
@@ -81,7 +78,7 @@ h4 {
 h5 {
   font-size: 14px;
   line-height: 1.2;
-  font-family: 'Micra';
+  font-family: 'Micra','Arial', 'sans-serif';
   font-weight: normal;
   font-style: normal;
 }
@@ -277,15 +274,14 @@ h5 {
   border: 1px solid var(--color-var-light);
 }
 
-.accordion__header::after {
-  flex-shrink: 0;
+.accordion__arrow {
   width: 1.25rem;
   height: 25px;
-  margin-left: auto;
-  background-image: url('/assets/img/icon/arrow-accordeon.svg');
-  background-repeat: no-repeat;
-  background-size: 1.25rem;
-  content: "";
+  margin-right: 10px;
+}
+
+.accordion__arrow.arrow-active {
+  transform: rotate(-180deg);
 }
 
 .accordion__item_show .accordion__header::after {
