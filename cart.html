@@ -1,148 +1,241 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/css/index.css" />
-    <link href="./assets/fonts/Inter.css" />
-    <link href="./assets/fonts/Micra.css" />
-    <title>Путь осознанного здоровья</title>
 
-<link href="./assets/css/index.css" rel="stylesheet">
-  </head>
-  <body>
-    
-<section class="container mt-5">
-    <div class="row g-5">
-      <div class="col-md-5 col-lg-4 order-md-last">
-        <h4 class="d-flex justify-content-between align-items-center mb-3">
-          <span class="text-primary">Корзина</span>
-          <span class="badge bg-primary rounded-pill">3</span>
-        </h4>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./assets/css/index.css" />
+  <link href="./assets/fonts/Inter.css" />
+  <link href="./assets/fonts/Micra.css" />
+  <title>Путь осознанного здоровья</title>
+
+  <link href="./assets/css/index.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg container">
+    <a class="navbar-brand" href="/"><img src="./assets/img/icon/logo.svg" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+      aria-controls="staticBackdrop" aria-label="Переключатель навигации">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/shop.html">Магазин</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/catalog.html">Каталог</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/news.html">Статьи и видео
+          </a>
+        </li>
+      </ul>
+      <button class="button-out" onclick="window.open('/sign-in.html', '_blank');">Войти/Зарегистрироваться</button>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+    aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+      <a class="navbar-brand" href="#"><img src="./assets/img/icon/logo.svg" /></a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Наши направления</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Магазин</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Наши специалисты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Статьи и видео
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="container mt-5">
+    <div class="row">
+      <h4 class="mb-3">
+        Корзина
+      </h4>
+
+      <div class="col-lg-7">
+        <div class="content-product mb-3">
+          <div class="info-product">
+            <img class="w-100 cart-img" src="./assets/img/shop-page/cart-tovar-img.png" />
+            <div class="info-text">
+              <h5>Название товара</h5>
+              <p class="text-m">Описание товара</p>
+            </div>
+          </div>
+
+          <div class="btns-product">
+            <div class="counter-cart">
+              <div class="counterBtn">
+                <a class="decreaseButton">-</a>
+                <span class="counter">1</span>
+                <a class="increaseButton">+</a>
+              </div>
+            </div>
+            <a href="/"><img src="./assets/img/icon/remove-cart.svg" /></a>
+          </div>
+        </div>
+
+        <div class="content-product mb-3">
+          <div class="info-product">
+            <img class="w-100 cart-img" src="./assets/img/shop-page/cart-tovar-img.png" />
+            <div class="info-text">
+              <h5>Название товара</h5>
+              <p class="text-m">Описание товара</p>
+            </div>
+          </div>
+
+          <div class="btns-product">
+            <div class="counter-cart">
+              <div class="counterBtn">
+                <a class="decreaseButton">-</a>
+                <span class="counter">1</span>
+                <a class="increaseButton">+</a>
+              </div>
+            </div>
+            <a href="/"><img src="./assets/img/icon/remove-cart.svg" /></a>
+          </div>
+        </div>
+
+        <div class="content-product mb-3">
+          <div class="info-product">
+            <img class="w-100 cart-img" src="./assets/img/shop-page/cart-tovar-img.png" />
+            <div class="info-text">
+              <h5>Название товара</h5>
+              <p class="text-m">Описание товара</p>
+            </div>
+          </div>
+
+          <div class="btns-product">
+            <div class="counter-cart">
+              <div class="counterBtn">
+                <a class="decreaseButton">-</a>
+                <span class="counter">1</span>
+                <a class="increaseButton">+</a>
+              </div>
+            </div>
+            <a href="/"><img src="./assets/img/icon/remove-cart.svg" /></a>
+          </div>
+        </div>
       </div>
-      <div class="col-md-7 col-lg-8">
-        <h4 class="mb-3">Ваши данные</h4>
-        <form class="needs-validation" novalidate>
-          <div class="row g-3">
-            <div class="col-sm-6">
-              <label for="firstName" class="form-label">Фамилия</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-              <div class="invalid-feedback">
-                Valid first name is required.
-              </div>
-            </div>
 
-            <div class="col-sm-6">
-              <label for="lastName" class="form-label">Имя</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-              <div class="invalid-feedback">
-                Valid last name is required.
-              </div>
-            </div>
+      <div class="col-lg-5">
+        <div class="content-info-cart">
+          <ul class="lists-info">
+            <li class="d-flex justify-content-between">
+              <p class="text-m">Товаров в корзине:</p>
+              <strong>3</strong>
+            </li>
+            <li class="d-flex justify-content-between">
+              <p class="text-m">Общий вес:</p>
+              <strong>200гр</strong>
+            </li>
+          </ul>
 
-            <div class="col-12">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
-              <div class="invalid-feedback">
-                Please enter a valid email address for shipping updates.
-              </div>
-            </div>
+          <ul>
+            <li class="d-flex justify-content-between">
+              <p class="text-m">Итого:</p>
+              <strong class="text-price">3.000₽</strong>
+            </li>
+          </ul>
+        </div>
 
-            <div class="col-12">
-              <label for="address" class="form-label">Адресс</label>
-              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-              <div class="invalid-feedback">
-                Please enter your shipping address.
-              </div>
-            </div>
-          </div>
-
-          <hr class="my-4">
-
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="same-address">
-            <label class="form-check-label" for="same-address"></label>
-          </div>
-
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="save-info">
-            <label class="form-check-label" for="save-info">Save this information for next time</label>
-          </div>
-
-          <hr class="my-4">
-
-          <h4 class="mb-3">Способы оплаты:</h4>
-
-          <div class="my-3">
-            <div class="form-check">
-              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-              <label class="form-check-label" for="credit">Credit card</label>
-            </div>
-            <div class="form-check">
-              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-              <label class="form-check-label" for="debit">Debit card</label>
-            </div>
-            <div class="form-check">
-              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-              <label class="form-check-label" for="paypal">PayPal</label>
-            </div>
-          </div>
-
-          <div class="row gy-3">
-            <div class="col-md-6">
-              <label for="cc-name" class="form-label">Name on card</label>
-              <input type="text" class="form-control" id="cc-name" placeholder="" required>
-              <small class="text-muted">Full name as displayed on card</small>
-              <div class="invalid-feedback">
-                Name on card is required
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <label for="cc-number" class="form-label">Credit card number</label>
-              <input type="text" class="form-control" id="cc-number" placeholder="" required>
-              <div class="invalid-feedback">
-                Credit card number is required
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <label for="cc-expiration" class="form-label">Expiration</label>
-              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-              <div class="invalid-feedback">
-                Expiration date required
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <label for="cc-cvv" class="form-label">CVV</label>
-              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-              <div class="invalid-feedback">
-                Security code required
-              </div>
-            </div>
-          </div>
-
-          <hr class="my-4">
-
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
-        </form>
+        <button class="button w-100 mt-3">Оформить заказ</button>
       </div>
     </div>
+  </section>
+  <footer class="footer mt-5">
+    <section class="footer-content">
+      <div class="container">
+        <div class="footer-container row">
+          <div class="col">
+            <div class="logo mb-3">
+              <a href="index.html" class="mb-2"><img src="./assets/img/icon/logo.svg" alt="logo" /></a>
+            </div>
+          </div>
 
-  <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2017–2022 Company Name</p>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a href="#">Privacy</a></li>
-      <li class="list-inline-item"><a href="#">Terms</a></li>
-      <li class="list-inline-item"><a href="#">Support</a></li>
-    </ul>
+          <div class="col">
+            <h5 class="footer-title-list">О компании</h5>
+            <ul class="footer-list">
+              <li><a class="text-m" href="#">Статьи и видео</a></li>
+              <li><a class="text-m" href="#">О нас</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h5 class="footer-title-list">Покупателям</h5>
+            <ul class="footer-list">
+              <li><a class="text-m" href="#">Магазин</a></li>
+              <li><a class="text-m" href="#">Акции и новости</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h5 class="footer-title-list">Информация</h5>
+            <ul class="footer-list">
+              <li><a class="text-m" href="#">Способы оплаты товара</a></li>
+              <li><a class="text-m" href="#">Условия возврата</a></li>
+              <li><a class="text-m" href="#">Доставка и получение</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <ul class="footer-list-bank">
+              <li><img src="./assets/img/icon/footer-bank-sber.png" /></li>
+              <li><img src="./assets/img/icon/footer-bank-visa.png" /></li>
+              <li><img src="./assets/img/icon/footer-bank-mc.png" /></li>
+              <li><img src="./assets/img/icon/footer-bank-mir.png" /></li>
+            </ul>
+
+            <p class="title-number mt-2">+7 (999) 999 99 99</p>
+            <ul class="footer-list mt-2">
+              <li>
+                <p class="text-s">РФ с 10-00 до 17-00 по будням</p>
+              </li>
+              <li>
+                <p class="text-s">E-mail: mail@mail.ru</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row align-items-center">
+          <p class="footer-author font-sm mb-0 text-s">&copy; 2023 - Lorem ipsum dolor sit amet, adipiscing elit</p>
+        </div>
+        <div class="d-flex mt-2">
+          <ul class="footer-doc d-flex justify-content-between">
+            <li><a class="text-s" href="#">Обработка персональных данных</a></li>
+            <li><a class="text-s" href="#">Политика конфиденциальности </a></li>
+            <li><a class="text-s" href="#">Оферта</a></li>
+            <li><a class="text-s" href="#">Политика обработки данных</a></li>
+            <li><a class="text-s" href="#">Правила пользования сайтом</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </footer>
-</div>
 
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js.map"></script>
+  <script src="form-validation.js"></script>
+</body>
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      <script src="form-validation.js"></script>
-  </body>
 </html>

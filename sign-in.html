@@ -1,66 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
-    <link href="./assets/fonts/Inter.css" />
-    <link href="./assets/fonts/Micra.css" />
-    <title>Путь осознанного здоровья</title>
-  </head>
-  <body>
-    <section class="container mt-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="container-text">
-            <h1>Добро пожаловать!</h1>
-            <p>Заполните данные, чтобы войти в систему</p>
-          </div>
-          <form class="needs-validation" novalidate>
-            <div class="row g-3">
-              <div class="col-sm-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="firstName"
-                  placeholder="Логин"
-                  value=""
-                  required
-                />
-                <div class="invalid-feedback">
-                  Valid first name is required.
-                </div>
-              </div>
 
-              <div class="col-sm-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="lastName"
-                  placeholder="Пароль"
-                  value=""
-                  required
-                />
-                <div class="invalid-feedback">Valid last name is required.</div>
-              </div>
-            </div>
-          </form>
-          <button class="w-100 button mt-5" type="submit">
-            Войти в систему
-          </button>
-          <div class="d-flex align-items-center justify-content-between mt-3">
-            <a href="/">Еще не зарегистрировын?</a>
-            <a href="/">Забыли пароль?</a>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
+  <link href="./assets/fonts/Inter.css" />
+  <link href="./assets/fonts/Micra.css" />
+  <title>Путь осознанного здоровья</title>
+</head>
+
+<body>
+  <section class="container mt-5">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="container-text">
+          <h1>Добро пожаловать!</h1>
+          <p class="text-m">Заполните данные, чтобы войти в систему</p>
         </div>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="firstName" placeholder="Логин" required />
+            </div>
 
-        <div class="col-lg-6">
-          <img
-            class="w-100 img-border"
-            src="./assets/img/main-page/advantages-img.png"
-          />
+            <div class="col-sm-12">
+              <input type="password" class="form-control" id="lastName" placeholder="Пароль" required />
+            </div>
+          </div>
+        </form>
+        <button class="w-100 button mt-5" type="submit">
+          Войти в систему
+        </button>
+        <div class="btns-reg d-flex align-items-center justify-content-between mt-3">
+          <a href="/sign-in.html">Еще не зарегистрированы?</a>
+          <a href="/reset-password.html">Забыли пароль?</a>
         </div>
       </div>
-    </section>
-  </body>
+
+      <div class="col-lg-6 mt-xxl-0 mt-xl-0 mt-lg-0 mt-3">
+        <img class="w-100 img-border" src="./assets/img/sign/sign.jpg" />
+      </div>
+    </div>
+  </section>
+
+</body>
+
 </html>

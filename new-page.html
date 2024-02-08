@@ -11,13 +11,65 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg container">
+    <a class="navbar-brand" href="/"><img src="./assets/img/icon/logo.svg" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+      aria-controls="staticBackdrop" aria-label="Переключатель навигации">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/shop.html">Магазин</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/catalog.html">Каталог</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/news.html">Статьи и видео
+          </a>
+        </li>
+      </ul>
+      <button class="button-out" onclick="window.open('/sign-in.html', '_blank');">Войти/Зарегистрироваться</button>
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+    aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+      <a class="navbar-brand" href="#"><img src="./assets/img/icon/logo.svg" /></a>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Наши направления</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Магазин</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Наши специалисты</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Статьи и видео
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <section class="container new-page mt-5">
     <div class="row">
       <div class="col-lg-8">
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
         <img class="w-100 img-border" src="./assets/img/news-page/page-new-img-main.png" />
 
-        <p class="text-m mt-3">Pain was born and I will give you a complete account of the system, and expound the actual
+        <p class="text-m mt-3">Pain was born and I will give you a complete account of the system, and expound the
+          actual
           teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes,
           or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure
           rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues
@@ -41,50 +93,127 @@
         <h4 class="mb-2">Другие статьи</h4>
 
         <ul class="new-page-items mt-4 ">
-          <a href="/"> 
+          <a href="/">
             <li class="d-flex row gx-4">
-              <img class="col w-100 img-border item-new-img" src="./assets/img/news-page/more-item.png"/>
-  
+              <img class="col w-100 img-border item-new-img" src="./assets/img/news-page/more-item.png" />
+
               <div class="col item-new-info">
                 <h5>Curabitur porttitor orci eget nequ accumsan.</h5>
                 <p class="text-s">12.03.2023</p>
               </div>
-            </li> 
+            </li>
           </a>
-          <a href="/"> 
+          <a href="/">
             <li class="d-flex row gx-4 mt-4">
-              <img class="col w-100 img-border item-new-img" src="./assets/img/news-page/more-item.png"/>
-  
+              <img class="col w-100 img-border item-new-img" src="./assets/img/news-page/more-item.png" />
+
               <div class="col item-new-info">
                 <h5>Curabitur porttitor orci eget nequ accumsan.</h5>
                 <p class="text-s">12.03.2023</p>
               </div>
-            </li> 
+            </li>
           </a>
-          <a href="/"> 
+          <a href="/">
             <li class="d-flex row gx-4 mt-4">
-              <img class="col w-100 img-border item-new-img" src="./assets/img/news-page/more-item.png"/>
-  
+              <img class="col w-100 img-border item-new-img" src="./assets/img/news-page/more-item.png" />
+
               <div class="col item-new-info">
                 <h5>Curabitur porttitor orci eget nequ accumsan.</h5>
                 <p class="text-s">12.03.2023</p>
               </div>
-            </li> 
+            </li>
           </a>
-          <a href="/"> 
+          <a href="/">
             <li class="d-flex row gx-4 mt-4">
-              <img class="col w-100 img-border item-new-img" src="./assets/img/news-page/more-item.png"/>
-  
+              <img class="col w-100 img-border item-new-img" src="./assets/img/news-page/more-item.png" />
+
               <div class="col item-new-info">
                 <h5>Curabitur porttitor orci eget nequ accumsan.</h5>
                 <p class="text-s">12.03.2023</p>
               </div>
-            </li> 
+            </li>
           </a>
         </ul>
       </div>
     </div>
   </section>
+
+  <footer class="footer mt-5">
+    <section class="footer-content">
+      <div class="container">
+        <div class="footer-container row">
+          <div class="col">
+            <div class="logo mb-3">
+              <a href="index.html" class="mb-2"><img src="./assets/img/icon/logo.svg" alt="logo" /></a>
+            </div>
+          </div>
+
+          <div class="col">
+            <h5 class="footer-title-list">О компании</h5>
+            <ul class="footer-list">
+              <li><a class="text-m" href="#">Статьи и видео</a></li>
+              <li><a class="text-m" href="#">О нас</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h5 class="footer-title-list">Покупателям</h5>
+            <ul class="footer-list">
+              <li><a class="text-m" href="#">Магазин</a></li>
+              <li><a class="text-m" href="#">Акции и новости</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h5 class="footer-title-list">Информация</h5>
+            <ul class="footer-list">
+              <li><a class="text-m" href="#">Способы оплаты товара</a></li>
+              <li><a class="text-m" href="#">Условия возврата</a></li>
+              <li><a class="text-m" href="#">Доставка и получение</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <ul class="footer-list-bank">
+              <li><img src="./assets/img/icon/footer-bank-sber.png" /></li>
+              <li><img src="./assets/img/icon/footer-bank-visa.png" /></li>
+              <li><img src="./assets/img/icon/footer-bank-mc.png" /></li>
+              <li><img src="./assets/img/icon/footer-bank-mir.png" /></li>
+            </ul>
+
+            <p class="title-number mt-2">+7 (999) 999 99 99</p>
+            <ul class="footer-list mt-2">
+              <li>
+                <p class="text-s">РФ с 10-00 до 17-00 по будням</p>
+              </li>
+              <li>
+                <p class="text-s">E-mail: mail@mail.ru</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row align-items-center">
+          <p class="footer-author font-sm mb-0 text-s">&copy; 2023 - Lorem ipsum dolor sit amet, adipiscing elit</p>
+        </div>
+        <div class="d-flex mt-2">
+          <ul class="footer-doc d-flex justify-content-between">
+            <li><a class="text-s" href="#">Обработка персональных данных</a></li>
+            <li><a class="text-s" href="#">Политика конфиденциальности </a></li>
+            <li><a class="text-s" href="#">Оферта</a></li>
+            <li><a class="text-s" href="#">Политика обработки данных</a></li>
+            <li><a class="text-s" href="#">Правила пользования сайтом</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js.map"></script>
+
 </body>
 
 </html>
